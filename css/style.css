@@ -673,3 +673,39 @@ header {
 .gallery .description::selection {
 	background: #F5A63C;
 }
+
+.video-container {
+	display: grid;
+	width: 100%;
+	padding: 20px;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-gap: 20px;
+}
+
+.video-container .video-card{
+	display: grid;
+	max-width: 400px;
+	height: 100%;
+	grid-template-rows: 200px 1fr;
+}
+
+.video-container .info-wrapper {
+	margin-bottom: 0;
+	position: relative;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 25px 1fr 10px;
+}
+
+.video-container .info-wrapper i{
+	font-size: 0.75rem;
+	justify-self: end;
+}
+
+.video-container .info-wrapper i:hover {
+	cursor: pointer;
+}
+
+.video-container .video-card .video-info {
+	padding: 10px 0;
+}
