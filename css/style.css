@@ -883,3 +883,172 @@ footer {
 	text-decoration: none;
 	border-radius: 10px;
 }
+
+/* Media request */
+
+@media screen and (max-width: 1200px) {
+	html {
+		font-size: 18px;
+	}
+	.sidebar .username {
+		display: none;
+	}
+	.sidebar .watchers {
+		display: none;
+	}
+	.social-wrapper {
+		display: none;
+	}
+
+	.sidebar ul {
+		height: calc(100vh - 60px);
+	}
+	
+	.sidebar {
+		width: 75px;
+	}
+
+	.main {
+		position: relative;
+		top: 60px;
+		left: 75px;
+		width: calc(100% - 75px);
+	}
+
+	footer {
+		position: absolute;
+		width: 20vw;
+		margin-top: 100px;
+		bottom: 10px;
+		left: 50%;
+		transform: translateX(-50%);
+		white-space: nowrap;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	html {
+		font-size: 16px;
+	}
+
+	.description {
+		display: none;
+	}
+	
+	.gallery .video-card {
+		grid-template-columns: 3fr 1fr;
+		background: #E8E8E8;
+		border-radius: 15px;
+		overflow: hidden;
+		height: 100%;
+		width: 100%;
+	}
+
+	.gallery .video-info {
+		height: 100%;
+		justify-content: center;
+	}
+
+	.gallery .video-info {
+		padding: 5px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.gallery .info-wrapper {
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 10px;
+	}
+
+	.gallery .info-wrapper div {
+		align-items: center;
+		margin: 5px 0;
+	}
+
+	.popup .contentBox{
+		width: 300px;
+		height: auto;
+		flex-direction: column;
+	}
+
+	.popup .imgBx{
+			height: 200px;
+			transform: translateY(-50px);
+	}
+
+	.popup .imgBx:before{
+			background: #fff;
+	}
+
+	.popup .popup-content{
+			height: auto;
+			text-align: center;
+			padding: 20px;
+			padding-top: 0;
+	}
+}
+
+@media screen and (max-width:735px) {
+	.video-container {
+		justify-items: center;
+	}
+
+	.gallery {
+		font-size: 0.75rem;
+		width: 70vw;
+		height: 35vw;
+	}
+
+	.gallery .prevNext a {
+		height: 35vw;
+	}
+}
+
+
+@media screen and (max-width:550px) {
+	header {
+		display: grid;
+		grid-template-columns: 100px 1fr 60px;
+		align-content: center;
+	}
+
+	.menu-box {
+		display: flex;
+		align-items: center;
+	}
+
+	.search-box {
+		width: 100%;
+	}
+
+	.search-box input {
+		width: 60%;
+		padding: 10px;
+	}
+
+	.slider .video-card {
+    box-shadow: 2px 2px 25px rgba(0, 0, 0, 0.25);
+	}
+	
+}
+
+@media screen and (max-width:400px) {
+	.gallery {
+		font-size: 0.75rem;
+		width: 60vw;
+		height: 30vw;
+	}
+
+	.gallery .prevNext a {
+		height: 30vw;
+	}
+
+	.video-container {
+		width: 100%;
+		grid-template-columns: 1fr;
+
+	}
+}
