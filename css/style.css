@@ -317,3 +317,54 @@ header {
 .social .link a:hover {
 	color: #4343ffbb;
 }
+
+.main {
+	position: relative;
+	top: 60px;
+	left: 240px;
+	width: calc(100% - 240px);
+	overflow-x: hidden;
+}
+
+.tags ul{
+	padding-top: 10px;
+	display: flex;
+}
+
+.tags ul li {
+	width: auto;
+	border: 1px solid #B2B2B2;
+	border-radius: 25px;
+	padding: 5px 15px;
+	margin-left: 10px;
+	white-space: nowrap;
+	background: #E9E7E9;
+}
+
+.tags ul li:last-child {
+	margin-right: 15px;
+}
+
+.tags ul li:hover {
+	background: #D7D7D7;
+	cursor: pointer;
+}
+
+.tags ul li.active {
+	background: #F3A43C;
+	color: white;
+}
+
+.tags ul li.active:hover {
+	background: #ca9045;
+	color: white;
+
+}
+
+.tags ul {
+	overflow-x: scroll;
+}
+
+.tags ul::-webkit-scrollbar {
+	display: none;
+}
