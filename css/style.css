@@ -365,7 +365,6 @@ header {
 	top: 60px;
 	left: 240px;
 	width: calc(100% - 240px);
-	overflow-x: hidden;
 }
 
 .tags ul{
@@ -940,6 +939,99 @@ footer {
 	--btn-bg-hover: #929292;
 	--primary-grey: #3169d9;
 	--secondary-grey: #676767;
+}
+
+/* Fake preloader */
+
+.runsite {
+	font-family: "Font Awesome 5 Free";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 4;
+	visibility: hidden;
+	cursor: pointer;
+	visibility: hidden;
+	opacity: 0;
+	animation: show-run-site 0.5s 2s forwards;
+	pointer-events: none;
+}
+
+@keyframes show-run-site {
+	0% {
+		opacity: 0;
+		pointer-events: none;
+	}
+	100% {
+		opacity: 1;
+		pointer-events:all;
+	}
+}
+
+.runsite::after {
+	content: 'run site \f1b0';
+	transform: translate(-50%, -50%);
+	white-space: nowrap;
+	font-weight: 900;
+	visibility: visible;
+	position: absolute;
+	padding: 5px 10px;
+	background: #F5A63C;
+	color: #e7dfdd;
+	border-radius: 14px;
+	z-index: 4;
+}
+
+.runsite ~ main {
+	display: none;
+}
+
+.runsite:checked ~ main {
+	display: block;
+}
+
+.runsite:hover::after {
+	background: #e7dfdd;
+	color: #F5A63C;
+}
+
+.runsite:checked {
+	display: none;
+}
+
+.runsite:checked + .fake-preloader {
+	display: none;
+}
+
+.fake-preloader {
+	position: absolute;
+	z-index: 3;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background:#e7dfdd;
+	visibility: visible;
+	opacity: 1;
+}
+
+.fake-preloader img {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 100%;
+	animation: hide-fake-img 0.5s 2s forwards;
+}
+
+@keyframes hide-fake-img {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
 }
 
 /* Media request */
