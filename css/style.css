@@ -1021,9 +1021,9 @@ footer {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	height: 100%;
-	width: 100%;
-	object-fit: cover;
+	height: 50%;
+	width: 50%;
+	object-fit: contain;
 	animation: hide-fake-img 0.5s 2s forwards;
 }
 
