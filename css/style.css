@@ -24,10 +24,24 @@ header {
 	align-items: center;
 	height: 60px;
 	width: 100%;
-	padding: 10px;
+	padding: 10px 20px;
 	z-index: 1;
-	background: #FFF;
-	box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.3);
+	background: rgba( 255, 255, 255, 0.35 );
+	box-shadow: 0 4px 8px 0 rgba(4, 6, 32, 0.102);
+	backdrop-filter: blur( 14px );
+	-webkit-backdrop-filter: blur( 14px );
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
+	animation: header-rgb-led 10s infinite alternate-reverse;
+}
+
+@keyframes header-rgb-led {
+	from { box-shadow: 0 4px 8px 0 red }
+	16% { box-shadow: 0 4px 8px 0  yellow }
+	32% { box-shadow: 0 4px 8px 0  rgb(5, 242, 5) }
+	48% { box-shadow: 0 4px 8px 0  aqua }
+	64% { box-shadow: 0 4px 8px 0  blue }
+	80% { box-shadow: 0 4px 8px 0  fuchsia }
+	to { box-shadow: 0 4px 8px 0 rgb(231, 159, 4) }
 }
 
 .logo {
