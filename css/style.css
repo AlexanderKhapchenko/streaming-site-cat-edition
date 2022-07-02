@@ -1022,6 +1022,8 @@ footer {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	height: 100%;
+	width: 100%;
+	object-fit: cover;
 	animation: hide-fake-img 0.5s 2s forwards;
 }
 
@@ -1231,11 +1233,19 @@ footer {
 
 @media screen and (max-width: 310px) {
 	.darkmode {
+		display: none !important;
+	}
+
+	.runsite {
+		display: none;
+	}
+
+	.fake-preloader {
 		display: none;
 	}
 
 	main {
-		display: none;
+		display: none !important;
 	}
 
 	body {
