@@ -9,6 +9,12 @@ html {
 	font-weight: 700;
 }
 
+body {
+	position: relative;
+	min-height: 100vh;
+	padding-bottom: 100px;
+}
+
 /* Header */
 
 header {
@@ -147,6 +153,8 @@ header {
 	color: red;
 	border-top: 2px solid #D7D7D7;
 }
+
+/* Sidebar */
 
 .sidebar {
 	position: fixed;
@@ -318,6 +326,8 @@ header {
 	color: #4343ffbb;
 }
 
+/* Tags*/
+
 .main {
 	position: relative;
 	top: 60px;
@@ -368,6 +378,8 @@ header {
 .tags ul::-webkit-scrollbar {
 	display: none;
 }
+
+/* Gallery */
 
 .gallery {
 	position: relative;
@@ -682,6 +694,8 @@ header {
 	grid-gap: 20px;
 }
 
+/* Video container */
+
 .video-container .video-card{
 	display: grid;
 	max-width: 400px;
@@ -708,4 +722,15 @@ header {
 
 .video-container .video-card .video-info {
 	padding: 10px 0;
+}
+
+/* Footer */
+
+footer {
+	position: absolute;
+	width: 20vw;
+	margin-top: 100px;
+	bottom: 10px;
+	left: 50%;
+	white-space: nowrap;
 }
