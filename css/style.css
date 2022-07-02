@@ -148,6 +148,8 @@ header {
 	border-top: 2px solid #D7D7D7;
 }
 
+/* Sidebar */
+
 .sidebar {
 	position: fixed;
 	top: 60px;
@@ -318,6 +320,8 @@ header {
 	color: #4343ffbb;
 }
 
+/* Tags*/
+
 .main {
 	position: relative;
 	top: 60px;
@@ -368,6 +372,8 @@ header {
 .tags ul::-webkit-scrollbar {
 	display: none;
 }
+
+/* Gallery */
 
 .gallery {
 	position: relative;
@@ -682,6 +688,8 @@ header {
 	grid-gap: 20px;
 }
 
+/* Video container */
+
 .video-container .video-card{
 	display: grid;
 	max-width: 400px;
@@ -709,3 +717,4 @@ header {
 .video-container .video-card .video-info {
 	padding: 10px 0;
 }
+
