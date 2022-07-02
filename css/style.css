@@ -1,0 +1,87 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 24px;
+}
+
+/* Header */
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 60px;
+	border-bottom: 1px solid red;
+	padding: 10px;
+}
+
+.logo {
+	color: #F5A63C;
+	cursor: pointer;
+}
+
+.micro-btn,
+.notification-btn {
+	color: #B9B9B9;
+}
+
+.notification-btn {
+	margin-right: 10px;
+}
+
+.micro-btn:hover,
+.notification-btn:hover {
+	color: #929292;
+	cursor: pointer;
+}
+
+.menu-btn {
+	border: 1px solid #F5A63C;
+	background: #F5A63C;
+	border-radius: 50%;
+	padding: 7px;
+	cursor: pointer;
+}
+
+.search-box {
+	position: relative;
+	flex-grow: 0.15;
+	height: 33px;
+	display: flex;
+	align-items: center;
+}
+
+.search-box input {
+	border: 1px solid #D7D7D7;
+  font-size: 18px;
+  border-radius: 5px 0px 0px 5px;
+  padding: 0 60px 0 20px;
+  outline: none;
+	width: 80%;
+	height: 100%;
+}
+
+.search-box input:focus {
+	border: 1px solid #4343ffbb;
+}
+
+.search-box .search-btn {
+  padding: 5px;
+  background: #EDEDED;
+  font-size: 20px;
+	height: 100%;
+  border: 1px solid #D7D7D7;
+	border-radius: 0px 5px 5px 0px;
+  border-left: none; 
+  cursor: pointer;
+} 
+
+.search-box .search-btn:hover {
+	background: #DADADA;
+}
+
+.search-box .micro-btn {
+  margin-left: 10px;
+} 
